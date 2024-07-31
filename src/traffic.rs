@@ -5,8 +5,8 @@
 
 use objc::{msg_send, sel, sel_impl};
 use rand::{distributions::Alphanumeric, Rng};
-use tauri::{Manager, Runtime, Window};
-
+use tauri::Emitter;
+use tauri::{Runtime, Window};
 const WINDOW_CONTROL_PAD_X: f64 = 8.0;
 const WINDOW_CONTROL_PAD_Y: f64 = 12.0;
 

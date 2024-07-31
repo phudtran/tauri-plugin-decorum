@@ -1,7 +1,8 @@
 use tauri::{
     plugin::{Builder, TauriPlugin},
-    Error, Manager, Runtime, WebviewWindow,
+    Error, Runtime, WebviewWindow,
 };
+use tauri::{Emitter, Listener};
 
 #[cfg(target_os = "macos")]
 mod traffic;
